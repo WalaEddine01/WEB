@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <header><h1>Job Application Form</h1></header>
+        <form action="/submit-job-application" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-Name">First Name:</label>
+                <input type="text" id="first-Name" name="first-Name" required placeholder="Enter your First Name">
+                <br>
+                <label for="last-Name">Last Name:</label>
+                <input type="text" id="last-Name" name="last-Name" required placeholder="Enter your Last Name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Account Information</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>
+                    Address Information
+                </legend>
+                <label for="street-address">Street Address:</label>
+                <input type="text" id="street-address" name="street-address" required placeholder="Enter your street address">
+                <br>
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value="Select City">Select City</option>
+                    <option value="San Antonio">San Antonio</option>
+                    <option value="Austin">Austin</option>
+                    <option value="Houston">Houston</option>
+                    <option value="Dallas">Dallas</option>
+                </select>
+                <br>
+                <label for="Zip/Postal-Code">Zip/Postal Code:</label>
+                <input type="text" id="Zip/Postal-Code" name="Zip/Postal-Code" required placeholder="12345">
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Employment Details</legend>
+                <label for="position-appling-for">Position Appling For:</label>
+                <select name="position-appling-for" id="position-appling-for">
+                    <option value="Select Position">Select Position</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Database Administrator">Database Administrator</option>
+                    <option value="Network Administrator">Network Administrator</option>
+                </select>
+                <br>
+                <label for="years-of-experience">Years of Experience:</label>
+                <input type="number" id="years-of-experience" name="years-of-experience" required placeholder="Enter years of experience">
+                <br>
+                <label for="upload-resume">Upload Resume:</label>
+                <input type="file" id="upload-resume" name="upload-resume" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Availability</legend>
+                <label for="Availability Start Date">Availability Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+                <br>
+                <label for="Are you willing to relocate?">Are you willing to relocate?</label>
+                <input type="radio" id="yes" name="relocate" value="yes"> Yes
+                <input type="radio" id="no" name="relocate" value="no"> No
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additiona Information</legend>
+                <label for="additional-information">Additional Information:</label>
+                <textarea name="additional-information" id="additional-information" cols="30" rows="10" placeholder="Enter any additional information here"></textarea>
+                <br>
+                <label for="Subscribe to newsletter">Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes"> Yes, I would like to subscribe to the newsletter
+            </fieldset>
+                <button type="submit">Submit Application</button>
+        </form>
+    </body>
+</html>
+    
