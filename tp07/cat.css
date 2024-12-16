@@ -1,0 +1,43 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    background-color: beige;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
